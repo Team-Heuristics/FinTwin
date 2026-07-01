@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fintwin-backend
+    env: java
+    plan: starter
+    rootDir: fintwin-backend/fintwin-backend
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/fintwin-backend-1.0.0.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 17
