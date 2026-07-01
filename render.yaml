@@ -2,7 +2,7 @@ services:
   - type: web
     name: fintwin-backend
     runtime: docker
-    plan: starter
+    plan: free
     rootDir: fintwin-backend/fintwin-backend
     dockerfilePath: fintwin-backend/fintwin-backend/Dockerfile
     dockerContext: fintwin-backend/fintwin-backend
